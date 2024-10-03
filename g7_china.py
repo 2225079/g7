@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
 COUNTRIES = ["U.S.", "China", "Germany", "Japan", "U.K.", "France", "Italy", "Canada"]
-COLORS = ["r", "g", "b", "c", "m", "y", "k", "#234512"]
+COLORS = ['r', 'g', 'b', 'c', 'm', 'y', 'k', "#234512"]
 
 _gdp, _pop, _wap = pd.read_csv("data/gdp.csv"), pd.read_csv("data/population.csv"), pd.read_csv("data/working_age_population.csv")
 gdp, pop, wap = _gdp[["year"] + COUNTRIES], _pop[["year"] + COUNTRIES], _wap[["year"] + COUNTRIES]
